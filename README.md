@@ -7,7 +7,7 @@ This library was built for [Learning-Based Adaptive MPC for Magnetorquer-Only Sa
 <img width="6832" height="4143" alt="hero" src="https://github.com/user-attachments/assets/b51ff63d-21c4-4f67-a356-42faa18d1b24" />
 
 ## Quick start
-Explore our example notebook [![Open in molab](https://molab.marimo.io/molab-shield.svg)](https://molab.marimo.io/notebooks/nb_t72gztgSo1gxbaNYBMLueL).
+Explore our example notebook [![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/JHU-ACEL/raddo/blob/main/notebooks/Intro_to_RADDO.py).
 
 [Marimo](https://marimo.io/) offers a sandboxed environment with access to a GPU, so you will not need to install anything. If you do not want to run it in [molab](https://molab.marimo.io/notebooks), you can just run the following locally
 ```
@@ -40,9 +40,9 @@ docker exec -it -u docker raddo-cli-1 bash
 ```
 
 ## Examples
-- `Intro_to_RADDO.py` demonstrates the basic functionality of the library
-- `Magnetorquer_Control.py` is a more comprehensive example for the magnetorquer-only attitude control problem of a satellite with online adaptation
-- `B_field_Pretraining.py` shows the training pipeline for training the magnetic field models offline.
+- `Intro_to_RADDO.py` demonstrates the basic functionality of the library [![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/JHU-ACEL/raddo/blob/main/notebooks/Intro_to_RADDO.py)
+- `Magnetorquer_Control.py` is a more comprehensive example for the magnetorquer-only attitude control problem of a satellite with online adaptation [![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/JHU-ACEL/raddo/blob/main/notebooks/Magnetorquer_Control.py)
+- `B_field_Pretraining.py` shows the training pipeline for training the magnetic field models offline. [![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/JHU-ACEL/raddo/blob/main/notebooks/B_Field_Pretraining.py)
 
 ## Details
 - [Just-in-time (JIT) compilation](https://docs.jax.dev/en/latest/jit-compilation.html)

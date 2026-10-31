@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "raddo"
+version = "0.1.6"
+dependencies = [
+   "numpy>=2.5.3",
+   "jax>=0.11.2",
+   "equinox>=0.13.8",
+   "moreau>=0.4.0",
+   "optax>=0.2.8",
+]
+requires-python = ">=3.12"
+authors = [
+  {name = "Patrick Schwartz", email = "pschwa24@jh.edu"},
+]
+maintainers = [
+  {name = "Patrick Schwartz", email = "pschwa24@jh.edu"}
+]
+description = "RApidly Adapting Data-Driven Opimization (RADDO). JAX-based trajectory generator with Moreau-based QP solver with an emphasis on adaptation and attitude dynamics"
+readme = "README.md"
+classifiers = [
+  "Programming Language :: Python"
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/JHU-ACEL/raddo"
+
+[project.optional-dependencies]
+cuda12 = [ "jax[cuda12]>=0.11.2", "moreau[cuda12]>=0.4.0"]
+cuda13 = [ "jax[cuda13]>=0.11.2", "moreau[cuda13]>=0.4.0"]
+extras =[
+    "matplotlib>=3.11.2",
+    "pandas>=3.0.6",
+    "seaborn>=0.13.2",
+    "marimo>=0.24.2",
+    "wandb>=0.30.0",
+    "planetMagFields>=1.7.0"
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/raddo",
+  "README.md",
+  "LICENSE*",
+  "pyproject.toml",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/raddo"]

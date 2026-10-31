@@ -1,0 +1,50 @@
+name: raddo
+services:
+  cli:
+   image: raddo:latest
+   build:
+     context: .
+     dockerfile: docker/Dockerfile
+     target: base
+     args:
+      PYTHON_VERSION: "3.12"
+      CUDA_VERSION: "13"
+   stdin_open: true
+   tty: true
+   network_mode: host
+   ipc: host
+   privileged: True
+   deploy:
+     resources:
+       reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+   volumes:
+    - .:/workspace/
+   command: marimo edit --headless --host 0.0.0.0 --port=${MARIMO_PORT:-8888} # default to 8888 if MARIMO_PORT not defined
+  dev:
+   image: raddo:dev
+   build:
+     context: .
+     dockerfile: docker/Dockerfile_dev
+     target: base
+     args:
+      PYTHON_VERSION: "3.12"
+      CUDA_VERSION: "13"
+   stdin_open: true
+   tty: true
+   network_mode: host
+   ipc: host
+   privileged: True
+   deploy:
+     resources:
+       reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+   volumes:
+    - .:/workspace/
+   command: marimo edit --headless --host 0.0.0.0 --port=${MARIMO_PORT:-8888}

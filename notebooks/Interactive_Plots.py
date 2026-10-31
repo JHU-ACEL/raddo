@@ -30,7 +30,7 @@ def _():
         exec(compile(source, url, "exec"), mod.__dict__)
         return mod
 
-    plot_fn_url = https://raw.githubusercontent.com/JHU-ACEL/raddo/refs/heads/main/src/raddo/utils/plotting.py
+    plot_fn_url = "https://raw.githubusercontent.com/JHU-ACEL/raddo/refs/heads/main/src/raddo/utils/plotting.py"
     plot_utils = _load_module(plot_fn_url)
 
     sns.set_theme(context="paper", style="whitegrid", font="serif", font_scale=1.7)

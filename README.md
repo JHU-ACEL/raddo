@@ -1,6 +1,7 @@
 # Rapid Data-Driven Optimization (RADDO) 
 
 RADDO is a JAX-based, GPU-accelerated library for trajectory generation, model predictive control, and online-adaptation.
+View the project's [website](https://jhu-acel.github.io/raddo-site/), and play around with it yourself [![Open in molab](https://marimo.io/molab-shield.svg)](https://molab.marimo.io/github/JHU-ACEL/raddo/blob/main/notebooks/Intro_to_RADDO.py).
 This library was built for [Learning-Based Adaptive MPC for Magnetorquer-Only Satellite Attitude Control](https://arxiv.org/abs/2610.20280) which was accepted to the International Conference on Space Robotics (iSpaRo) 2026.
 
 ## Learning-Based Adaptive MPC for Magnetorquer-Only Satellite Attitude Control

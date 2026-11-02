@@ -35,10 +35,10 @@ with app.setup(hide_code=True):
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
-    # Introduction to RApidly Adapting Data Driven Optimization (RADDO)
+    # Introduction to RApid Data-Driven Optimization (RADDO)
     ## What is RADDO?
     RADDO is a JAX-based, GPU-accelerated library for trajectory generation, model predictive control, and online-adaptation.
-    It is designed to be easily used for your application.
+    It is designed to be easily used for your application. You can run it on a marimo server (make sure to enable GPU).
     ### Features
     - [Just-in-time (JIT) compilation](https://docs.jax.dev/en/latest/jit-compilation.html)
      - Makes use of the [Equinox](https://docs.kidger.site/equinox/) library for Object-Oriented programming while maintaining JIT-compatibility
@@ -46,7 +46,7 @@ def _():
       - Differentiable, fast QP solves
     - Attitude-Aware QP Solver
      - The QP Solver is set up to natively handle quaternion attitude dynamics
-     - Based off of ["Planning with Attitude"](https://roboticexplorationlab.org/papers/planning_with_attitude.pdf)
+       - Based off of ["Planning with Attitude"](https://roboticexplorationlab.org/papers/planning_with_attitude.pdf)
     - SQP Controller
     - Sampling-based MPC controllers (MPPI/CEM)
     - Quick start
@@ -78,7 +78,7 @@ def _():
 @app.cell(hide_code=True)
 def _():
     mo.md(r"""
-    Check what devices are available
+    Check what devices are available. In molab, make sure to enable GPU.
     """)
     return
 

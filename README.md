@@ -1,4 +1,4 @@
-# Rapidly Adapting Data-Drive Optimization (RADDO) 
+# Rapid Data-Driven Optimization (RADDO) 
 
 RADDO is a JAX-based, GPU-accelerated library for trajectory generation, model predictive control, and online-adaptation.
 This library was built for [Learning-Based Adaptive MPC for Magnetorquer-Only Satellite Attitude Control](https://arxiv.org/abs/2610.20280) which was accepted to the International Conference on Space Robotics (iSpaRo) 2026.

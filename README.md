@@ -46,12 +46,12 @@ docker exec -it -u docker raddo-cli-1 bash
 
 ## Details
 - [Just-in-time (JIT) compilation](https://docs.jax.dev/en/latest/jit-compilation.html)
- - Makes use of the [Equinox](https://docs.kidger.site/equinox/) library for Object-Oriented programming while maintaining JIT-compatibility
+  - Makes use of the [Equinox](https://docs.kidger.site/equinox/) library for Object-Oriented programming while maintaining JIT-compatibility
 - Quadratic Program (QP) Controller built on [Moreau](https://docs.moreau.so/)
   - Differentiable, fast QP solves
 - Attitude-Aware QP Solver
- - The QP Solver is set up to natively handle quaternion attitude dynamics
- - Based off of ["Planning with Attitude"](https://roboticexplorationlab.org/papers/planning_with_attitude.pdf)
+  - The QP Solver is set up to natively handle quaternion attitude dynamics
+   - Based off of ["Planning with Attitude"](https://roboticexplorationlab.org/papers/planning_with_attitude.pdf)
 - SQP Controller
 - Sampling-based MPC controllers (MPPI/CEM)
 - Quick start
@@ -59,13 +59,13 @@ docker exec -it -u docker raddo-cli-1 bash
    - To get started run `uvx marimo edit --sandbox Intro_to_RADDO.py`
    - You can also open it in [molab](https://molab.marimo.io/) which provides GPU access
 - Modular design
- - It is designed to be as general as possible so that you can use it for your own project.
- - You can use your own dynamics and/or write your own controllers.
+  - It is designed to be as general as possible so that you can use it for your own project.
+  - You can use your own dynamics and/or write your own controllers.
 - Differentiable
- - The whole pipeline is differentiable similar to [TurboMPC](https://arxiv.org/pdf/2606.24039) and [DiffMPC](https://github.com/ToyotaResearchInstitute/diffmpc).
- -  This allows you to use gradient descent to learn better cost weights, dynamics parameters, etc
-    - This is not something we have experimented with yet.
- - The structure of the Dynamics class is heavily based on [DiffMPC](https://github.com/ToyotaResearchInstitute/diffmpc).
+  - The whole pipeline is differentiable similar to [TurboMPC](https://arxiv.org/pdf/2606.24039) and [DiffMPC](https://github.com/ToyotaResearchInstitute/diffmpc).
+  -  This allows you to use gradient descent to learn better cost weights, dynamics parameters, etc
+     - This is not something we have experimented with yet.
+  - The structure of the Dynamics class is heavily based on [DiffMPC](https://github.com/ToyotaResearchInstitute/diffmpc).
 
 ## Cite
 ```

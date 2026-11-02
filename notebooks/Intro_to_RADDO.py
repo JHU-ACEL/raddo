@@ -64,7 +64,7 @@ def _():
      - The structure of the Dynamics class is heavily based on [DiffMPC](https://github.com/ToyotaResearchInstitute/diffmpc).
 
     ### This notebook
-    This notebook walks you through the basic functionality of the library, demonstrating how you could apply it to your own problem. If you want a more comprehensive example associated with the paper ["Learning-Based Adaptive MPC for Magnetorquer-Only Satellite Attitude Control in an Unknown Magnetic Field"](https://arxiv.org/abs/2610.20280), see the `Magnetorquer-Control.py` notebook.
+    This notebook walks you through the basic functionality of the library, demonstrating how you could apply it to your own problem. If you want a more comprehensive example associated with the paper ["Learning-Based Adaptive MPC for Magnetorquer-Only Satellite Attitude Control in an Unknown Magnetic Field"](https://arxiv.org/abs/2610.20280), see the `Magnetorquer-Control.py` notebook [![Open in molab](https://molab.marimo.io/molab-shield.svg)](https://molab.marimo.io/github/github.com/JHU-ACEL/raddo/blob/main/notebooks/Magnetorquer_Control.py).
 
     ### marimo notes
     If you have never worked with marimo before, it is a reactive python notebook, which means all the cells run automatically. Set expensive cells to run on a button-click, or disable autorun.
